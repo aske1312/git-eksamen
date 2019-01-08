@@ -1,0 +1,384 @@
+/*/////////////////////////////// GENERELT ////////////*/
+
+html {
+    min-width: 375px;
+    margin-bottom: 40px;
+}
+
+* {
+    margin: 0;
+}
+
+
+
+/*Billeder bliver responsive*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+#splash {
+    max-width: 1500px;
+    margin: 15px;
+}
+
+.splash {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    margin-top: 3%;
+}
+
+.splash img {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+
+.column {
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+#baggrundsfarve {
+    background-color: lightgray;
+    margin-bottom: 30px;
+}
+
+
+/*/////////////////////////////// FONT ////////////*/
+
+p {
+    font-family: 'Lato-Light';
+    font-size: 1rem;
+    margin: 20px;
+}
+
+ul {
+    font-family: 'Lato-Light';
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 2rem;
+    margin: 40px;
+}
+
+h2 {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+h3 {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.bottom-left {
+    position: absolute;
+    font-family: 'Lato-Light';
+    font-size: 0.9rem;
+    color: black;
+}
+
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    max-width: 1700px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 99;
+}
+
+
+/*/////////////////////////////// DESTTOP NAVIGATION ////////////*/
+
+
+header nav a {
+    font-family: OpenSans-SemiBold;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav a:visited {
+    color: black;
+}
+
+
+header nav a:hover {
+    color: dimgrey;
+}
+
+header nav a:link {
+    color: black;
+}
+
+
+header nav a:active {
+    color: black;
+    font-family: OpenSans-SemiBold;
+}
+
+
+
+/*kan ikke være en header nav a det padding så
+også vil påvirker burgermenuen*/
+#links {
+    padding: 1rem;
+
+}
+
+#menu a {
+    font-family: OpenSans-SemiBold;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black
+}
+
+#menu a:hover {
+    color: dimgrey;
+}
+
+
+#menuknap {
+    font-size: 1.5rem
+}
+
+
+@media only screen and (min-width: 627px) {
+
+    header nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header nav a {
+        /*border-right: 0.2rem solid black;*/
+        padding: 0 1.2rem 0 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width: 627px) {
+    #links {
+        display: none;
+    }
+}
+
+
+
+
+/*/////////////////////////////// MOBILE NAVIGATION ////////////*/
+
+.hidden {
+
+    transform: translateX(-200%);
+}
+
+#menuknap {
+
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+    top: 38px;
+}
+
+#menu {
+
+    list-style-type: none;
+    transition: transform 0.5s;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 627px) {
+
+    #menuknap,
+    #menu {
+        display: none;
+    }
+}
+
+
+
+
+
+/*////////////////////////////////////////// INDEX ////////////*/
+
+#index .column {
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin: 1.5rem;
+
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+/****************** Responsive image grit */
+
+#index .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to
+each other */
+#index.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+#index .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout
+instead of four columns */
+@media screen and (max-width: 800px) {
+    #index .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack
+on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    #index .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Bottom left text */
+#index .bottom-left {
+    position: absolute;
+    font-family: 'Lato-Light';
+    font-size: 0.9rem;
+
+}
+
+#index .top {
+    margin-top: 19px;
+}
+
+
+
+
+
+/*//////////////////////////////////////////// OM ////////////*/
+
+
+#om .column {
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin: 10px;
+    /* padding: 1.5rem;*/
+    /* border: 0.1rem solid black; */
+}
+
+
+/********** OM - Responsive image grit **********/
+
+#om .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+#om.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+#om .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    #om .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    #om .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Bottom left text */
+#om .bottom-left {
+    position: absolute;
+    font-family: 'Lato-Light';
+    font-size: 0.9rem;
+
+}
+
+/* Margin top på billed 2, 3 osv... */
+#om .top {
+    margin-top: 19px;
+}
+
+
+
+
+
+
+
+/*//////////////////////////////////////////// TEMA 1 ////////////*/
+
+
+
+
+/*//////////////////////////////////////////// TEME 2 ////////////*/
+
+#tema2 .column_left {
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin: 1.5rem;
+
+
+}
+
+/*//////////////////////////////////////////// TEME 3 ////////////*/
+
+/*//////////////////////////////////////////// TEME 4 ////////////*/
