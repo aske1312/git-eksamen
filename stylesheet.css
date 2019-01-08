@@ -19,7 +19,6 @@ img {
 
 #splash {
     max-width: 1500px;
-    margin: 15px;
 }
 
 .splash {
@@ -93,6 +92,10 @@ h3 {
     font-size: 0.9rem;
     color: black;
 }
+
+
+
+
 
 
 header nav {
