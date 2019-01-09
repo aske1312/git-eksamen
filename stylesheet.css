@@ -34,8 +34,6 @@ img {
 }
 
 
-
-
 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -144,8 +142,7 @@ header nav a:active {
 
 
 
-/*kan ikke være en header nav a det padding så
-også vil påvirker burgermenuen*/
+
 #links {
     padding: 1rem;
 
@@ -176,7 +173,6 @@ også vil påvirker burgermenuen*/
     }
 
     header nav a {
-        /*border-right: 0.2rem solid black;*/
         padding: 0 1.2rem 0 1.2rem;
     }
 }
@@ -253,8 +249,7 @@ a {
     padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to
-each other */
+
 #index.column {
     flex: 25%;
     max-width: 25%;
@@ -266,8 +261,7 @@ each other */
     vertical-align: middle;
 }
 
-/* Responsive layout - makes a two column-layout
-instead of four columns */
+
 @media screen and (max-width: 800px) {
     #index .column {
         flex: 50%;
@@ -275,8 +269,7 @@ instead of four columns */
     }
 }
 
-/* Responsive layout - makes the two columns stack
-on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
     #index .column {
         flex: 100%;
@@ -284,7 +277,7 @@ on top of each other instead of next to each other */
     }
 }
 
-/* Bottom left text */
+
 #index .bottom-left {
     position: absolute;
     font-family: 'Lato-Light';
@@ -307,8 +300,7 @@ on top of each other instead of next to each other */
     flex-basis: 200px;
     flex-grow: 1;
     margin: 10px;
-    /* padding: 1.5rem;*/
-    /* border: 0.1rem solid black; */
+
 }
 
 
@@ -320,7 +312,7 @@ on top of each other instead of next to each other */
     padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+
 #om.column {
     flex: 25%;
     max-width: 25%;
@@ -332,7 +324,7 @@ on top of each other instead of next to each other */
     vertical-align: middle;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+
 @media screen and (max-width: 800px) {
     #om .column {
         flex: 50%;
@@ -340,7 +332,7 @@ on top of each other instead of next to each other */
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
     #om .column {
         flex: 100%;
@@ -348,7 +340,7 @@ on top of each other instead of next to each other */
     }
 }
 
-/* Bottom left text */
+
 #om .bottom-left {
     position: absolute;
     font-family: 'Lato-Light';
@@ -356,18 +348,12 @@ on top of each other instead of next to each other */
 
 }
 
-/* Margin top på billed 2, 3 osv... */
+
 #om .top {
     margin-top: 19px;
 }
 
 
-
-
-
-
-
-/*//////////////////////////////////////////// TEMA 1 ////////////*/
 
 
 
@@ -381,7 +367,3 @@ on top of each other instead of next to each other */
 
 
 }
-
-/*//////////////////////////////////////////// TEME 3 ////////////*/
-
-/*//////////////////////////////////////////// TEME 4 ////////////*/
